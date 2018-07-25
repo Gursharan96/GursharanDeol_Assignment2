@@ -1,0 +1,131 @@
+<!--
+Author: Gursharan Deol
+Description: In this file user will able to see a simple trivia quiz and can play.
+-->
+<html>
+<head>
+<title>Play Quiz</title>
+     <link rel="stylesheet" href="css/trivia.css">
+     <script type="text/javascript" src ="js/trivia_js.js">
+     </script>
+
+</head>
+<body>
+<p></p>
+<button onclick ="return help()">Help</button>
+<p></p>
+<form name = "form1">
+select the question color <select placeholder = "select" id="qs" name="qs" onchange="color();">
+<option value="red">Red</option>
+<option value="green">Green</option>
+<option value="black">Black</option>
+<option value="blue">Blue</option>
+<option value="yellow">Yellow</option>
+</select><p></p>
+
+select the background color <select placeholder = "select" id="background" onchange="backgroundcolor();">
+<option value="AntiqueWhite ">AntiqueWhite </option>
+<option value="DarkKhaki ">DarkKhaki </option>
+<option value="LightGray">LightGray</option>
+<option value="Moccasin">Moccasin</option>
+<option value="MistyRose">MistyRose </option>
+</select><p></p>
+
+select the heading color <select placeholder = "select" id="hc" onchange="hcolor();">
+<option value="green">Green</option>
+<option value="black">Black</option>
+<option value="blue">Blue</option>
+<option value="indigo">Indigo</option>
+<option value="Chocolate">Chocolate</option>
+</select><p></p>
+</form>
+<div id = "content" >
+<form name="myForm" >
+<fieldset >
+<legend id="1"> Question 1:  </legend>
+What is the Japanese dish of deep fried vegetables and seafood?<br>
+ <input type="radio" name="q1" value="correct">TEMPURA<br>
+ <input type="radio" name="q1">Sushi<br>
+ <input type="radio" name="q1">Donburi<br>
+<p></p>
+</fieldset>
+<fieldset>
+<legend id="2"> Question 2:  </legend>
+The alcoholic beverage sherry originated in which country?<br>
+ <input type="radio" name="q2">Italy</input> <br>
+ <input type="radio" name="q2"value="correct">Spain<br>
+ <input type="radio" name="q2">India<br>
+<p></p>
+</fieldset>
+<fieldset>
+<legend id="3"> Question 3:  </legend>
+What is the name of the Spanish soup served cold?<br>
+ <input type="radio" name="q3" value="correct"> Gazpacho<br>
+ <input type="radio" name="q3">Beer soup<br>
+ <input type="radio" name="q3">Naengmyeon<br>
+<p></p>
+</fieldset>
+<fieldset>
+<legend id="4"> Question 4:  </legend>
+What forms the base of the Indian dish raita?<br>
+ <input type="radio" name="q4">Rice</input><br>
+ <input type="radio" name="q4">Cheese<br>
+ <input type="radio" name="q4"value="correct"> Yoghurt<br>
+<p></p>
+</fieldset>
+<fieldset>
+<legend id="5"> Question 5:  </legend>
+What nation produces two thirds of the world's vanilla?<br>
+ <input type="radio" name="q5" value="correct">Madagascar<br>
+ <input type="radio" name="q5">Mexico<br>
+ <input type="radio" name="q5">Turkey<br>
+ <p></p>
+ </fieldset>
+<fieldset>
+<legend id="6"> Question 6:  </legend>
+Deer meat is known by what name?<br>
+ <input type="radio" name="q6">Veal <br>
+ <input type="radio" name="q6"value="correct">Venison<br>
+ <input type="radio" name="q6">Pork<br>
+ <p></p>
+ </fieldset>
+<fieldset>
+<legend id="7"> Question 7:  </legend>
+The 'Pizza Hut' franchise began in what country??<br>
+ <input type="radio" name="q7" value="correct">USA<br>
+ <input type="radio" name="q7">England<br>
+ <input type="radio" name="q7">Italy<br>
+ <p></p>
+ </fieldset>
+<fieldset>
+<legend id="8"> Question 8:  </legend>
+Strawberries, raspberries, peaches and cherries are all related to which type of flower?<br>
+ <input type="radio" name="q8">Lily <br>
+ <input type="radio" name="q8">Sunflower<br>
+ <input type="radio" name="q8"value="correct">Rose<br>
+ <p></p>
+ </fieldset>
+<fieldset>
+<legend id="9"> Question 9:  </legend>
+What is the beef wrapped in, in a beef Wellington?<br>
+ <input type="radio" name="q9">Pancetta <br>
+ <input type="radio" name="q9"value="correct">Pastry<br>
+ <input type="radio" name="q9">Prosciutto<br>
+ <p></p>
+ </fieldset>
+<fieldset>
+<legend id="10"> Question 10:  </legend>
+Which one of the following foods is likely to contain the MOST bacteria?<br>
+ <input type="radio" name="q10" value="correct">Frozen raw chicken<br>
+ <input type="radio" name="q10">A opened fizzy drink<br>
+ <input type="radio" name="q10">Bottled mayonnaise<br>
+ <p></p>
+ </fieldset>
+<p></p>
+<button onclick="return checkAnswers()">Get the result</button> <input type="reset" value="Reset answers" />
+</form>
+<p></p>
+</div>
+</body>
+
+</html>

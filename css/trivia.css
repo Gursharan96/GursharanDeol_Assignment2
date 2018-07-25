@@ -1,0 +1,49 @@
+/*
+Author: Gursharan Deol
+Description: This file is for styling.
+*/
+body{
+	width : 70%;
+	margin : auto;
+	font-size: 20px;
+	color: navy;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
+legend{
+	margin: auto;
+	color: red;
+	font-weight : bold;
+	font-size : 20px;
+}
+
+.title{
+	font-family: Arial;
+	font-weight: bold;
+	color: black; 
+	font-size: 500%;
+	text-align: center;
+	padding-top : 2%;
+}
+.cat{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-weight: bold;
+	color: blue; 
+	font-size: 45px;
+	text-align: center;
+}
+img{
+	width:250px;
+	height :180px;
+	padding-top:10px;
+}
+a{
+	color:red;
+	font-weight : bold;
+	font-size : 40px;
+}
+.a{
+	text-align: center;
+}
+.img{
+	text-align: center;
+}
